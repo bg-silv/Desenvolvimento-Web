@@ -1,0 +1,12 @@
+#centro {
+    border: solid; /* Define uma borda sólida */
+    padding: 10px 20px; /* Adiciona um preenchimento interno de 10px para o topo e base, 20px para a direita e esquerda */
+    border-radius: 20px; /* Raio das bordas de 20px para arredondamento */
+    text-align: center; /* Centraliza o conteúdo dentro do elemento */
+    display: inline-block; /* Faz o elemento comportar-se como um bloco, mas sem expandir para preencher a largura total */
+}
+
+.icones {
+    width: 5%; /* Largura do ícone */
+    height: 5%; /* Altura do ícone */
+}
