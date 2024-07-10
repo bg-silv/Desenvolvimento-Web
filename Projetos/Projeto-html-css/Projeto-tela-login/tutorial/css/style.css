@@ -1,106 +1,124 @@
-/*geral*/
+/* Geral */
+
+/* Define estilos padrão para todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-    color: #323232;
-    border: none;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total do elemento */
+    font-family: Helvetica, sans-serif; /* Define a fonte padrão */
+    color: #323232; /* Define a cor do texto padrão */
+    border: none; /* Remove bordas padrão */
 }
 
+/* Define o fundo do corpo (body) */
 body {
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-
+    background-image: url('../img/background.jpg'); /* Define uma imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
 }
 
+/* Remove o contorno ao focar em textarea e input */
 textarea:focus,
 input:focus {
     outline: none;
 }
 
+/* Define estilos para links (a) e rótulos (label) */
 a,
 label {
-    font-size: .8rem;
-
+    font-size: .8rem; /* Define o tamanho da fonte */
 }
 
-
+/* Define a cor dos links ao passar o mouse (hover) */
 a:hover {
     color: red;
 }
 
-/*container login*/
+/* Container de login */
+
+/* Estilos para o contêiner de login */
 #login-container {
-    background-color: white;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 30px;
-    margin-top: 10vh;
-    border-radius: 10px;
-    text-align: center;
+    background-color: white; /* Cor de fundo branca */
+    width: 400px; /* Largura do contêiner */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    padding: 20px 30px; /* Espaçamento interno */
+    margin-top: 10vh; /* Espaçamento superior */
+    border-radius: 10px; /* Arredonda os cantos */
+    text-align: center; /* Centraliza o texto */
 }
 
-/*formulario*/
+/* Formulário */
 
+/* Estilos para o formulário */
 form {
-    margin-top: 30px;
-    margin-bottom: 40px;
-
+    margin-top: 30px; /* Espaçamento superior */
+    margin-bottom: 40px; /* Espaçamento inferior */
 }
 
+/* Estilos para rótulos (label) e campos de entrada (input) */
 label,
 input {
-    display: block;
-    width: 100%;
-    text-align: left;
+    display: block; /* Exibe como bloco */
+    width: 100%; /* Largura total */
+    text-align: left; /* Alinha à esquerda */
 }
 
+/* Estilos para campos de entrada (input) */
 input {
-    border: 2px solid #323232;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 20px;
+    border: none; /* Remove bordas padrão */
+    border-bottom: 2px solid #323232; /* Define a borda inferior */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento inferior */
 }
 
+/* Estilos para campos de entrada (input) ao focar */
 input:focus {
-    border-bottom: 2px solid #085588;
+    border-bottom: 2px solid #085588; /* Altera a cor da borda inferior ao focar */
 }
 
+/* Estilos para o link de "esqueci minha senha" */
 #forgot-pass {
-    text-align: right;
-    display: block;
+    text-align: right; /* Alinha à direita */
+    display: block; /* Exibe como bloco */
 }
 
+/* Estilos para o botão de envio (submit) */
 input[type="submit"] {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 40px;
-    border-radius: 20px;
-    margin-top: 30px;
-    color: white;
-    background-color: #c40021;
-    cursor: pointer;
+    text-align: center; /* Centraliza o texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-weight: bold; /* Define o texto em negrito */
+    border: none; /* Remove bordas */
+    height: 40px; /* Altura do botão */
+    border-radius: 20px; /* Arredonda os cantos */
+    margin-top: 30px; /* Espaçamento superior */
+    color: white; /* Cor do texto */
+    background-color: #c40021; /* Cor de fundo */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
 }
 
+/* Estilos para ícones */
 .icones {
-    height: 40px;
-    width: 40px;
-    margin: 5px;
+    height: 40px; /* Altura dos ícones */
+    width: 40px; /* Largura dos ícones */
+    margin: 5px; /* Espaçamento ao redor dos ícones */
 }
 
+/* Estilos para o botão de envio (submit) ao passar o mouse (hover) */
 input[type="submit"]:hover {
-    background-color: #1b223c;
-    transition: .5s;
+    background-color: #1b223c; /* Altera a cor de fundo */
+    transition: .5s; /* Transição suave de 0,5 segundos */
 }
 
-/*redes sociais*/
+/* Redes sociais */
 
+/* Estilos para o contêiner de redes sociais */
 #social-container,
 #social-container p {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
 
+/* Estilos para o contêiner de registro */
+#register-container p {
+    margin-bottom: 10px; /* Espaçamento inferior */
 }

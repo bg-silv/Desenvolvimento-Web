@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> <!-- Declaração do tipo de documento e idioma da página -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Tela de Login</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo CSS externo -->
 </head>
 
 <body>
-    <div id="login-container">
-        
-        <h1>Login</h1>
-        <form action="" >
-            <label for="email">E-mail</label>
-            <input type="emeil" name="email" id="email" placeholder="Digite seu e-mail" >
-            <label for="password">Senha</label>
-            <input type="password" name="password" placeholder="Digite sua Senha" id="password">
-            <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-            <input type="submit" value="Login">
-        </form>
+    <div id="login-container"> <!-- Contêiner para o conteúdo de login -->
 
-        <div id="social-container">
-            <p>Ou entre pelas suas redes sociais</p>
-            <a href="#"><img src="img/facebook.png" alt="" class="icones"></a>
-            <a href="#"><img src="img/linkedin.png" alt="" class="icones"></a>
-            <a href="#"><img src="img/github.png" alt="" class="icones"></a>
+        <h1>Login</h1> <!-- Título da página de login -->
+        <form action="" class="formulario"> <!-- Início do formulário de login -->
+            <label for="email">E-mail</label> <!-- Rótulo para o campo de e-mail -->
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail"> <!-- Campo de entrada para e-mail -->
+            <label for="password">Senha</label> <!-- Rótulo para o campo de senha -->
+            <input type="password" name="password" placeholder="Digite sua Senha" id="password"> <!-- Campo de entrada para senha -->
+            <a href="#" id="forgot-pass">Esqueceu a senha?</a> <!-- Link para recuperação de senha -->
+            <input type="submit" value="Login"> <!-- Botão de envio do formulário -->
+        </form> <!-- Fim do formulário de login -->
+
+        <div id="social-container"> <!-- Contêiner para login social -->
+            <p>Ou entre pelas suas redes sociais</p> <!-- Texto informativo sobre login social -->
+            <a href="#"><img src="img/facebook.png" alt="" class="icones"></a> <!-- Link e ícone para login com Facebook -->
+            <a href="#"><img src="img/linkedin.png" alt="" class="icones"></a> <!-- Link e ícone para login com LinkedIn -->
+            <a href="#"><img src="img/github.png" alt="" class="icones"></a> <!-- Link e ícone para login com GitHub -->
         </div>
 
-        <div id="register-container">
-            <p>Ainda não tem uma conta?</p>
-            <a href="#">Registrar</a>
+        <div id="register-container"> <!-- Contêiner para registro de nova conta -->
+            <p>Ainda não tem uma conta?</p> <!-- Texto informativo sobre registro -->
+            <a href="#">Registrar</a> <!-- Link para a página de registro -->
         </div>
     </div>
 </body>
