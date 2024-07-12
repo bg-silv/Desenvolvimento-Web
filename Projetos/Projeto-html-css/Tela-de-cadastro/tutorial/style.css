@@ -1,118 +1,107 @@
-/*geral*/
+/* geral */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #323232;
-    border: none;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui borda e preenchimento no cálculo da largura e altura do elemento */
+    font-family: Helvetica, sans-serif; /* Define a família de fontes padrão como Helvetica ou uma fonte sans-serif */
+    color: #323232; /* Define a cor do texto padrão como #323232 */
+    border: none; /* Remove qualquer borda padrão */
 }
 
-input,
-label {
-    display: block;
-    width: 100%;
-}
-
-input:focus,
-label:focus {
-    outline: none;
+input, label {
+    display: block; /* Define que esses elementos serão exibidos como blocos */
+    outline: none; /* Remove o contorno padrão ao focar */
+    width: 100%; /* Define a largura como 100% do elemento pai */
 }
 
 a {
-    color: #e60084;
+    color: #E60084; /* Define a cor dos links como #E60084 */
 }
 
 body {
-    padding-top: 5vh;
-    background-image: url('../tutorial/img/bg-register-page.jpg');
-    background-size: cover;
-    background-position-y: -150px;
+    padding-top: 5vh; /* Adiciona um preenchimento superior de 5% da altura da visualização */
+    background-image: url('img/bg-register-page.jpg'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem de fundo cobrir todo o elemento */
+    background-position-y: -150px; /* Posiciona a imagem de fundo verticalmente com um deslocamento de -150px */
 }
 
-/*form*/
-
+/* form */
 #main-container {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border-radius: 10px;
-    padding: 25px;
+    width: 500px; /* Define a largura como 500px */
+    margin-left: auto; /* Centraliza horizontalmente ao definir a margem esquerda como automática */
+    margin-right: auto; /* Centraliza horizontalmente ao definir a margem direita como automática */
+    background-color: #FFF; /* Define a cor de fundo como branco */
+    border-radius: 10px; /* Define bordas arredondadas com raio de 10px */
+    padding: 25px; /* Adiciona preenchimento interno de 25px */
 }
 
 #main-container h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 1.6rem;
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 25px; /* Adiciona uma margem inferior de 25px */
+    font-size: 1.6rem; /* Define o tamanho da fonte como 1.6 rem */
 }
 
 form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    display: flex; /* Define o contêiner flexível */
+    flex-wrap: wrap; /* Permite que os itens flexíveis sejam quebrados em várias linhas */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
 }
 
 .full-box {
-    flex: 1 1 100%;
-    position: relative;
+    flex: 1 1 100%; /* Define a flexibilidade do item: cresce, encolhe, e tem 100% de largura inicial */
+    position: relative; /* Define a posição como relativa para permitir posicionamento absoluto de filhos */
 }
 
 .half-box {
-    flex: 1 1 45%;
-    position: relative;
+    flex: 1 1 45%; /* Define a flexibilidade do item: cresce, encolhe, e tem 45% de largura inicial */
+    position: relative; /* Define a posição como relativa para permitir posicionamento absoluto de filhos */
 }
 
 .spacing {
-    margin-right: 2.5%;
+    margin-right: 2.5%; /* Adiciona uma margem direita de 2.5% */
 }
 
 label {
-    font-weight: bold;
-    font-size: .8rem;
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    font-size: .8rem; /* Define o tamanho da fonte como 0.8 rem */
 }
 
 input {
-    border-bottom: 2px solid #323232;
-    padding: 10px;
-    font-size: .9rem;
-    margin-bottom: 40px;
-
+    border-bottom: 2px solid #323232; /* Adiciona uma borda inferior de 2px com cor #323232 */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px */
+    font-size: .9rem; /* Define o tamanho da fonte como 0.9 rem */
+    margin-bottom: 40px; /* Adiciona uma margem inferior de 40px */
 }
 
 input:focus {
-    border-color: #e60084;
+    border-color: #E60084; /* Muda a cor da borda ao focar no campo de entrada para #E60084 */
 }
 
 input[type="submit"] {
-    background-color: #e60084;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    height: 40px;
-    cursor: pointer;
+    background-color: #E60084; /* Define a cor de fundo como #E60084 */
+    color: #FFF; /* Define a cor do texto como branco */
+    border: none; /* Remove qualquer borda */
+    border-radius: 20px; /* Define bordas arredondadas com raio de 20px */
+    height: 40px; /* Define a altura como 40px */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
 #agreement {
-    margin-right: 5px;
-
+    margin-right: 5px; /* Adiciona uma margem direita de 5px */
 }
 
-#agreement,
-#agreement-label {
-    display: inline-block;
-    width: auto;
+#agreement, #agreement-label {
+    display: inline-block; /* Define a exibição como bloco em linha para esses elementos */
+    width: auto; /* Define a largura automática */
 }
 
-/*erros*/
-.error-validation{
-    color: red;
-    position: absolute;
-    top: 57px;
-    font-size: .8rem;
+.error-validation {
+    color: #ff1a1a; /* Define a cor do texto como #ff1a1a */
+    position: absolute; /* Define a posição como absoluta */
+    top: 57px; /* Define a posição superior como 57px */
+    font-size: 12px; /* Define o tamanho da fonte como 12px */
 }
 
-.template{
-    display: none;
+.template {
+    display: none; /* Oculta este elemento */
 }
