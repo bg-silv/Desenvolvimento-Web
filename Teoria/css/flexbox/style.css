@@ -1,0 +1,13 @@
+.ulcont{
+    color: blue;
+    display: flex;
+    
+    justify-content: space-between;
+    width: 100vh;
+    background-color: red;
+}
+
+.container{
+display: flex;
+
+}
