@@ -1,19 +1,163 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-
-body{
-    background-color: #090e22;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: white;
-}
-
-.hide{
-display: none !important;
-}
+/* Aplica estilos básicos a todos os elementos */
+* {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamentos internos */
+    box-sizing: border-box; /* Inclui bordas e espaçamentos internos no tamanho total do elemento */
+    font-family: "Lato", sans-serif; /* Define a fonte para Lato, com fallback para sans-serif */
+  }
+  
+  /* Estilos do corpo da página */
+  body {
+    background-color: #090e22; /* Define a cor de fundo */
+    display: flex; /* Usa o layout flex */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+    color: #fff; /* Define a cor do texto como branco */
+  }
+  
+  /* Classe para esconder elementos */
+  .hide {
+    display: none !important; /* Esconde elementos, sobrepondo qualquer outra regra */
+  }
+  
+  /* Estilos do contêiner principal */
+  .container {
+    min-width: 400px; /* Largura mínima de 400px */
+    min-height: 400px; /* Altura mínima de 400px */
+    background-color: #1d1e33; /* Cor de fundo */
+    padding: 2rem; /* Espaçamento interno de 2rem */
+  }
+  
+  /* Formulário de IMC */
+  #calc-container h2 {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 2rem; /* Margem inferior de 2rem */
+  }
+  
+  .form-inputs {
+    display: flex; /* Usa o layout flex */
+    flex-direction: column; /* Direção da flexbox como coluna */
+    justify-content: space-between; /* Distribui espaço uniformemente entre os itens */
+  }
+  
+  .form-control {
+    display: flex; /* Usa o layout flex */
+    flex: 1; /* Permite que o item cresça */
+    flex-direction: column; /* Direção da flexbox como coluna */
+    margin-bottom: 1rem; /* Margem inferior de 1rem */
+  }
+  
+  .form-control label {
+    font-weight: bold; /* Texto em negrito */
+    margin-bottom: 0.6rem; /* Margem inferior de 0.6rem */
+    color: #ccc; /* Cor do texto */
+  }
+  
+  .form-control input {
+    padding: 1rem 0.5rem; /* Espaçamento interno */
+  }
+  
+  .action-control {
+    display: flex; /* Usa o layout flex */
+    justify-content: space-between; /* Distribui espaço uniformemente entre os itens */
+    margin-top: 2rem; /* Margem superior de 2rem */
+    gap: 1rem; /* Espaçamento entre os itens */
+  }
+  
+  /* Estilos dos botões */
+  button {
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    padding: 1rem 1.5rem; /* Espaçamento interno */
+    background-color: #f44236; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    color: #fff; /* Cor do texto */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    opacity: 0.9; /* Opacidade inicial */
+    flex: 1; /* Permite que o botão cresça */
+  }
+  
+  button:hover {
+    opacity: 1; /* Opacidade ao passar o mouse sobre o botão */
+  }
+  
+  #clear-btn {
+    background-color: #444; /* Cor de fundo diferente para o botão de limpar */
+  }
+  
+  /* Estilos da tabela de resultados */
+  #result-container {
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  #imc-number {
+    font-size: 2.4rem; /* Tamanho da fonte */
+    margin-bottom: 0.6rem; /* Margem inferior */
+  }
+  
+  #imc-info {
+    font-size: 1.4rem; /* Tamanho da fonte */
+    color: #ccc; /* Cor do texto */
+  }
+  
+  #result-container h3 {
+    margin-top: 1rem; /* Margem superior */
+    color: #dfdfdf; /* Cor do texto */
+  }
+  
+  #result-container {
+    display: flex; /* Usa o layout flex */
+    flex-direction: column; /* Direção da flexbox como coluna */
+  }
+  
+  #imc-table {
+    margin: 1.5rem 0; /* Margens vertical */
+    font-size: 0.8rem; /* Tamanho da fonte */
+  }
+  
+  .table-header {
+    font-weight: bold; /* Texto em negrito */
+    color: #ccc; /* Cor do texto */
+  }
+  
+  .table-header,
+  .table-data {
+    display: flex; /* Usa o layout flex */
+    justify-content: space-between; /* Distribui espaço uniformemente entre os itens */
+    margin-bottom: 0.5rem; /* Margem inferior */
+    padding-bottom: 0.5rem; /* Espaçamento interno inferior */
+    border-bottom: 1px solid #444; /* Linha inferior */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .table-header h4,
+  .table-data p {
+    flex: 1; /* Permite que os itens cresçam */
+  }
+  
+  .table-header h4:nth-child(3),
+  .table-data p:nth-child(3) {
+    max-width: 80px; /* Largura máxima */
+  }
+  
+  #back-btn {
+    align-self: center; /* Centraliza o botão de voltar */
+  }
+  
+  /* Estilos de cores baseados na classificação de IMC */
+  .good {
+    color: #12db34; /* Cor para IMC normal */
+  }
+  
+  .low {
+    color: #dbce12; /* Cor para magreza e sobrepeso */
+  }
+  
+  .medium {
+    color: #db6212; /* Cor para obesidade */
+  }
+  
+  .high {
+    color: #db1912; /* Cor para obesidade grave */
+  }
+  
